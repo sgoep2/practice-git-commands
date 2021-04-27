@@ -125,7 +125,6 @@ def wait_until_is_not_visible(driver, selector, timeout=20):
     return wait.until(ec.invisibility_of_element(selector))
 
 
-# FROM ELEMENT
 def wait_until_exist(driver, selector, timeout=20):
     wait = WebDriverWait(driver, timeout)
     return wait.until(ec.presence_of_element_located(selector))
